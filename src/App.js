@@ -57,8 +57,9 @@ function App() {
   return (
    <>
     <Navbar title="Text" about="about Us" mode={state} mode1={state1}togglemode={convertor} togglemode2={convert2}/>
-    <Alert/>
+   
     <BrowserRouter>
+    <Alert/>
       <Routes>
         <Route path="/"  element={<TextForm  showmeassge={showmeassge}  heading="Enter the text to analyze" mode={state} togglemode={convertor} togglemode2={convert2}/>
 } />
@@ -67,7 +68,6 @@ function App() {
     </div> } />
       </Routes>
     </BrowserRouter>
-    
     {/* <TextForm  showmeassge={showmeassge}  heading="Enter the text to analyze" mode={state} togglemode={convertor} togglemode2={convert2}/> */}
     {/* <About/> */}
     {/* <div className='container'>
