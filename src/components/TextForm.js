@@ -51,7 +51,7 @@ export default function TextForm(props) {
         <button className="btn btn-primary mt-1 mx-1" onClick={handlespace}> Handle spaces </button>
           <div className={`container text-${props.mode==='light'?'dark':'light'}`}>
           <h1>Your summary </h1>
-          <p> {text.split(" ").filter((element)=>{return element.length!=0}).length}  words, {text.length} letters </p>
+          <p> {text.split(" ").filter((element)=>{return element.length!==0}).length}  words, {text.length} letters </p>
           <p> {0.08* text.split(" ").length} Minutes </p>
           <h2>Preview</h2>
           <p>{text}</p>

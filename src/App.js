@@ -7,10 +7,12 @@ import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import {
   BrowserRouter,
-  Link,
   Route,
   Routes,
 } from "react-router-dom";
+
+
+
 function App() {
   const [state,newstate]=useState('light');
   const [state1,newstate1]=useState('light');
@@ -59,7 +61,7 @@ function App() {
     <Navbar title="Text" about="about Us" mode={state} mode1={state1}togglemode={convertor} togglemode2={convert2}/>
    
     <BrowserRouter>
-    <Alert/>
+    <Alert alert={alert} />
       <Routes>
         <Route path="/"  element={<TextForm  showmeassge={showmeassge}  heading="Enter the text to analyze" mode={state} togglemode={convertor} togglemode2={convert2}/>
 } />
